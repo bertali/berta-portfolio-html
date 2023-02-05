@@ -17,7 +17,7 @@ body {
     background-image: url("../img/backgroundStoneZoomed.jpg");
     background-size: cover;
     background-position: center;
-    color: #EF5205;
+    color: black;
 }
 
 .navbar {
@@ -31,11 +31,12 @@ body {
 }
 
 .brand span{
-    color:#747685;
+    color:black;
 }
 
 .menu {
     display: flex;
+    flex-direction: row;
     width: 50%;
     justify-content: space-around;
 }
@@ -45,8 +46,9 @@ body {
 }
 
 .menu a {
-    color: #F4CCC8;
+    color: #efbab6;
     text-decoration: none;
+    display: flex;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
@@ -78,6 +80,11 @@ h1 {
     font-size: 3em;
 }
 
+.main p {
+    margin-top: 5px;
+    accent-color: black;
+}
+
 span {
     color: #C7ACB8;
 }
@@ -99,7 +106,119 @@ span {
 }
 
 .main img {
-    
+    width: 279px;
+    border: 7px solid #747685;
+    height: 520;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(0,1fr);
+    width: 100vw;
+    align-items: center;
+    background-color: #7F7481;
+}
+
+.about-info {
+    grid-column: 4/10;
+    padding: 3em;
+    color: aliceblue;
+}
+
+.about-info h2 {
+    font-size: 2em;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: #efbab6;
+    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 2.5em;
+}
+
+.about p {
+    margin-top: 5px;
+}
+
+.portfolio {
+    width: 100vw;
+    height: 120vh;
+    padding: 3em;
+    color: aliceblue;
+    background-color: #7F7481;
+}
+
+.portfolio-heading {
+    width: 100vw;
+    grid-column: 4/10;
+    padding: 3em;
+}
+
+.portfolio-heading h2 {
+    font-size: 2em;
+}
+
+.portfolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    background-color: #2e2b2b;
+    margin: 0.5em;
+}
+
+.card__img {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/ElConsultorio.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.card__title {
+    padding: 20px;
+}
+
+.card__project-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card__project-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.card__project-links i {
+    font-size: 1.5em;
+}
+
+.card .project-details {
+    margin: 0 auto;
+    margin: 1em;
+    width: 70%;
+}
+
+.card .project-details a {
+    text-decoration: none;
+    color:#747685;
+    text-transform: uppercase;
+}
+
+
+.proyect-details-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
 }
 
 
